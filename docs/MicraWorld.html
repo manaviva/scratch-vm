@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Scratch3MicroBitBlocks - Documentation</title>
+    <title>MicraWorld - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -31,7 +31,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Scratch3MicroBitBlocks</h1>
+    <h1 class="page-title">MicraWorld</h1>
     
 
     
@@ -44,10 +44,19 @@
 <header>
     
         <h2>
-        Scratch3MicroBitBlocks
+        MicraWorld
         </h2>
         
-            <div class="class-description"><p>Scratch 3.0 blocks to interact with a MicroBit peripheral.</p></div>
+            <div class="class-description"><p>From MVC Model theorem,
+MicraWorld class is the Model and the Controler of a minecraft world,
+ which can connect the world through the mod &quot;raspberryjammod&quot; based on forge.
+Thus this has many statuses or values reflected as its mirror world.
+Some of these can be watched by reporter blocks.
+So this also communicates with the mod by alternative two ways.
+One is by websocket, which supplies only basic blocks; only some parts of full functions.
+The other is by the helper &quot;scratchserver.py&quot;, which supplies full functions.
+These can be switched alternatively by the flag &quot;_Mode_WithHelper&quot;,
+ which is set by constructor or &quot;setHelperMode_ON()&quot; or &quot;setHelperMode_OFF()&quot;.</p></div>
         
     
 </header>
@@ -62,7 +71,7 @@
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="Scratch3MicroBitBlocks"><span class="type-signature"></span>new Scratch3MicroBitBlocks<span class="signature">(runtime)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="MicraWorld"><span class="type-signature"></span>new MicraWorld<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -108,9 +117,6 @@
 
 
 
-<div class="description">
-    <p>Construct a set of MicroBit blocks.</p>
-</div>
 
 
 
@@ -119,56 +125,6 @@
 
 
 
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>runtime</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Runtime.html">Runtime</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the Scratch 3.0 runtime.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -204,331 +160,7 @@
 
         
             
-<h4 class="name" id=".EXTENSION_ID"><span class="type-signature">(static) </span>EXTENSION_ID<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id=".EXTENSION_NAME"><span class="type-signature">(static) </span>EXTENSION_NAME<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id=".TILT_THRESHOLD"><span class="type-signature">(static) </span>TILT_THRESHOLD<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="BUTTONS_MENU"><span class="type-signature"></span>BUTTONS_MENU<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="GESTURES_MENU"><span class="type-signature"></span>GESTURES_MENU<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="PIN_STATE_MENU"><span class="type-signature"></span>PIN_STATE_MENU<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="runtime"><span class="type-signature"></span>runtime<span class="type-signature"> :<a href="Runtime.html">Runtime</a></span></h4>
+<h4 class="name" id="_locale"><span class="type-signature"></span>_locale<span class="type-signature"></span></h4>
 
 
 
@@ -574,21 +206,11 @@
 
 
 <div class="description">
-    <p>The Scratch 3.0 runtime.</p>
+    <p>Now locale, only 3 mode supported: &quot;ja&quot;, &quot;ja-Hira&quot; and &quot;en&quot;.</p>
 </div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><a href="Runtime.html">Runtime</a></span>
-
-
-        </li>
-    </ul>
-
 
 
 
@@ -596,7 +218,7 @@
 
         
             
-<h4 class="name" id="TILT_DIRECTION_ANY_MENU"><span class="type-signature"></span>TILT_DIRECTION_ANY_MENU<span class="type-signature"></span></h4>
+<h4 class="name" id="_McSocket"><span class="type-signature"></span>_McSocket<span class="type-signature"></span></h4>
 
 
 
@@ -641,6 +263,11 @@
 
 
 
+<div class="description">
+    <p>The Direct Connecter to &quot;raspberryjammod&quot; which is installed as a mod of the minecraft
+ so that this extension can works without the helper &quot;scratchserver.py&quot;.</p>
+</div>
+
 
 
 
@@ -650,7 +277,7 @@
 
         
             
-<h4 class="name" id="TILT_DIRECTION_MENU"><span class="type-signature"></span>TILT_DIRECTION_MENU<span class="type-signature"></span></h4>
+<h4 class="name" id="_Mode_WithHelper"><span class="type-signature"></span>_Mode_WithHelper<span class="type-signature"></span></h4>
 
 
 
@@ -694,6 +321,128 @@
 
 
 
+
+<div class="description">
+    <p>The Mode whether this extension needs the helper &quot;scratchserver.py&quot; or not.
+    true :  need &quot;scratchserver.py&quot; and all blocks can work.
+    false:  don't need &quot;scratchserver.py&quot; but it's only some basical blocks that can work.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="pen_x"><span class="type-signature"></span>pen_x<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Statuses of the Pen in the minecraft world connected by websocket or by helper.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="r_status"><span class="type-signature"></span>r_status<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Statuses of the minecraft world connected by websocket or by helper.</p>
+</div>
 
 
 
@@ -713,156 +462,7 @@
 
     
 
-    <h4 class="name" id="_getTiltAngle"><span class="type-signature">(private) </span>_getTiltAngle<span class="signature">(direction)</span><span class="type-signature"> &rarr; {number}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>direction</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">TiltDirection</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the direction (front, back, left, right) to check.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>the tilt sensor's angle in the specified direction.
-Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -getTiltAngle(right).</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="_isTilted"><span class="type-signature">(private) </span>_isTilted<span class="signature">(direction)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="_initSocket"><span class="type-signature"></span>_initSocket<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -909,7 +509,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Test whether the tilt sensor is currently tilted.</p>
+    <p>Controler of WebSocket, which works without helper &quot;scratchserver.py&quot;.</p>
 </div>
 
 
@@ -922,53 +522,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>direction</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">TiltDirection</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the tilt direction to test (front, back, left, right, or any).</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -981,32 +534,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>true if the tilt sensor is tilted past a threshold in the specified direction.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -1014,7 +541,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="displayClear"><span class="type-signature"></span>displayClear<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="_send"><span class="type-signature"></span>_send<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -1061,7 +588,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Turn all 5x5 matrix LEDs off.</p>
+    <p>Send a command to the minecraft world through the helper &quot;scratchserver.py&quot;.</p>
 </div>
 
 
@@ -1086,30 +613,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>a Promise that resolves after a tick.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -1117,7 +620,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="displaySymbol"><span class="type-signature"></span>displaySymbol<span class="signature">(args)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="drawCircle"><span class="type-signature"></span>drawCircle<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -1164,7 +667,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Display a predefined symbol on the 5x5 LED matrix.</p>
+    <p>draw a Circle in the minecraft world.</p>
 </div>
 
 
@@ -1177,53 +680,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -1236,32 +692,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>a Promise that resolves after a tick.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -1269,7 +699,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="displayText"><span class="type-signature"></span>displayText<span class="signature">(args)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="getBlockInfo"><span class="type-signature"></span>getBlockInfo<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -1316,7 +746,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Display text on the 5x5 LED matrix.</p>
+    <p>get the Block-ID and Block-Data at the coordinate (x,y,z) from the minecraft world.</p>
 </div>
 
 
@@ -1329,53 +759,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -1388,37 +771,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>a Promise that resolves after the text is done printing.
-Note the limit is 19 characters
-The print time is calculated by multiplying the number of horizontal pixels
-by the default scroll delay of 120ms.
-The number of horizontal pixels = 6px for each character in the string,
-1px before the string, and 5px after the string.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -1426,305 +778,7 @@ The number of horizontal pixels = 6px for each character in the string,
 
     
 
-    <h4 class="name" id="getInfo"><span class="type-signature"></span>getInfo<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>metadata for this extension and its blocks.</p>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="getTiltAngle"><span class="type-signature"></span>getTiltAngle<span class="signature">(args)</span><span class="type-signature"> &rarr; {number}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>DIRECTION</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">TiltDirection</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the direction (front, back, left, right) to check.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>the tilt sensor's angle in the specified direction.
-Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -getTiltAngle(right).</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="isButtonPressed"><span class="type-signature"></span>isButtonPressed<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="getPlayerPos"><span class="type-signature"></span>getPlayerPos<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -1771,7 +825,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Test whether the A or B button is pressed</p>
+    <p>get the coordinate of the player from the minecraft world .</p>
 </div>
 
 
@@ -1784,53 +838,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -1843,32 +850,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>true if the button is pressed.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -1876,211 +857,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="isTilted"><span class="type-signature"></span>isTilted<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>DIRECTION</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">TiltDirection</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the tilt direction to test (front, back, left, right, or any).</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<div class="description">
-    <p>Test whether the tilt sensor is currently tilted.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>true if the tilt sensor is tilted past a threshold in the specified direction.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="whenButtonPressed"><span class="type-signature"></span>whenButtonPressed<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="getPlayerRotPit"><span class="type-signature"></span>getPlayerRotPit<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -2127,7 +904,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Test whether the A or B button is pressed</p>
+    <p>get the Rotation and Pitch of the player from the minecraft world.</p>
 </div>
 
 
@@ -2140,53 +917,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -2199,32 +929,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>true if the button is pressed.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -2232,7 +936,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="whenGesture"><span class="type-signature"></span>whenGesture<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="Reset"><span class="type-signature"></span>Reset<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -2279,7 +983,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 <div class="description">
-    <p>Test whether the micro:bit is moving</p>
+    <p>Reset around (0,0,0) and make the player teleport there in the minecraft world.</p>
 </div>
 
 
@@ -2292,53 +996,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -2351,32 +1008,6 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>true if the micro:bit is moving.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
         
@@ -2384,7 +1015,7 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 
-    <h4 class="name" id="whenPinConnected"><span class="type-signature">(private) </span>whenPinConnected<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="ResetHere"><span class="type-signature"></span>ResetHere<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
@@ -2425,213 +1056,13 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
     
 </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <ul>
-<li>the touch pin state.</li>
-</ul>
-</div>
-
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="whenTilted"><span class="type-signature"></span>whenTilted<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>DIRECTION</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">TiltDirection</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the tilt direction to test (front, back, left, right, or any).</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
 
 
 
 
 
 <div class="description">
-    <p>Test whether the tilt sensor is currently tilted.</p>
+    <p>Reset around the player to the flat land in the minecraft world.</p>
 </div>
 
 
@@ -2644,91 +1075,413 @@ Note that getTiltAngle(front) = -getTiltAngle(back) and getTiltAngle(left) = -ge
 
 
 
-    <h5>Parameters:</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
     
 
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>args</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the block's arguments.</p></td>
-        </tr>
+    <h4 class="name" id="setBlockData"><span class="type-signature"></span>setBlockData<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
-    </tbody>
-</table>
 
 
 
 
+<dl class="details">
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-<h5>Returns:</h5>
+    
 
-        
-<div class="param-desc">
-    <ul>
-<li>true if the tilt sensor is tilted past a threshold in the specified direction.</li>
-</ul>
-</div>
+    
 
+    
 
+    
 
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
+    
 
+    
 
-    </dd>
+    
 </dl>
 
+
+
+
+
+<div class="description">
+    <p>set a Block at the coordinate (x,y,z) in the minecraft world.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
     
+
+    <h4 class="name" id="setBlocks"><span class="type-signature"></span>setBlocks<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>set Blocks as a cuboid, which diagonal line is defined from (x,y,z) to (x1,y1,z1) in the minecraft world.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPen"><span class="type-signature"></span>setPen<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>The series of functions for the Pen, like a turtle in the minecraft world.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPlayerRotPit"><span class="type-signature"></span>setPlayerRotPit<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>set player's rotation and pitch in the minecraft world.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="Teleport"><span class="type-signature"></span>Teleport<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Teleport the player to (x,y,z) in the minecraft world.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
