@@ -82,7 +82,7 @@ var VirtualMachine =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/extensions/scratch3_video_sensing/debug.js-exposed");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/extensions/scratch3_video_sensing/debug.js?6a0d");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,7 +118,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/extensions/scratch3_video_sensing/debug.js":
+/***/ "./src/extensions/scratch3_video_sensing/debug.js?0d08":
 /*!********************************************************!*\
   !*** ./src/extensions/scratch3_video_sensing/debug.js ***!
   \********************************************************/
@@ -142,14 +142,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/extensions/scratch3_video_sensing/debug.js-exposed":
-/*!****************************************************************!*\
-  !*** ./src/extensions/scratch3_video_sensing/debug.js-exposed ***!
-  \****************************************************************/
+/***/ "./src/extensions/scratch3_video_sensing/debug.js?6a0d":
+/*!********************************************************!*\
+  !*** ./src/extensions/scratch3_video_sensing/debug.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Scratch3VideoSensingDebug"] = __webpack_require__(/*! -!./debug.js */ "./src/extensions/scratch3_video_sensing/debug.js");
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Scratch3VideoSensingDebug"] = __webpack_require__(/*! -!./debug.js */ "./src/extensions/scratch3_video_sensing/debug.js?0d08");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
