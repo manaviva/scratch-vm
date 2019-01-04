@@ -760,9 +760,9 @@ const FormDrawEllipseBallPart = {
 };
 
 const FormDoSomething = {
-	'ja'     : 'オリジナル処理をする[Args]',
-	'ja-Hira': 'オリジナルしょりをする[Args]',
-	'en'     : 'your original function[Args]'
+	'ja'     : 'オリジナル処理をする[Args] |  ヘルパー',
+	'ja-Hira': 'オリジナルしょりをする[Args] |  ヘルパー',
+	'en'     : 'your original function[Args] |  helper'
 };
 
 const FormDoSomethingMsgDefault = {
